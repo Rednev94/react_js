@@ -12,7 +12,7 @@ const Item: FC<IItem> = (props) => {
   return (
     <div className={style.item_container}>
       <p>{name}</p>
-      <p>Описание:</p>
+      <p>Описание</p>
       <p>{description}</p>
     </div>
   );

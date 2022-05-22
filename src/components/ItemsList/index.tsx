@@ -6,7 +6,7 @@ const ItemsMock = [
   {
     id: 1,
     itemName: 'Ботинки',
-    itemDescription: 'Смотрите, какие потрясающие ботинки',
+    itemDescription: 'Смотрите, какие замечательный ботинки',
     price: 70000,
   },
   {
@@ -39,7 +39,7 @@ const ItemsList = () => {
           return <Item key={`ID: ${id}`} name={itemName} description={itemDescription} />;
         })}
         {/* <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} />
-        <Item name="Шапка" description="Очень красивая шапка" />
+        <Item name="Шапка" description="очень красивая шапка" />
         <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} />
         <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} /> */}
       </div>
