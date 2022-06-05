@@ -1,22 +1,12 @@
 import React from 'react';
-import Footer from '../Footer';
-import Header from '../Header';
-import ItemsList from '../ItemsList';
-import style from './MainPage.module.scss';
+import MainLoyout from '../../shared/layouts/MainLayout';
+import ItemsList from '../ItemsList/index';
 
 const MainPage = () => {
-  // Пример использования JSX
-  // const isTrue = true;
-  // const text1 = 'text 1';
-  // const text2 = 'text 2';
-  // return <div className={style.main_page}>{isTrue ? text1 : text2}</div>;
-
   return (
-    <div className={style.page_wrapper}>
-      <Header />
+    <MainLoyout>
       <ItemsList />
-      <Footer />
-    </div>
+    </MainLoyout>
   );
 };
 
