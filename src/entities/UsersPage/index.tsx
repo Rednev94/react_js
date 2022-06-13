@@ -18,8 +18,6 @@ const UsersPage = () => {
     }, 1500);
   }, []);
 
-  console.log(usersData);
-
   return !usersData ? <div>Загрузка...</div> : <UsersPageComponent usersDataAttr={usersData} />;
 };
 

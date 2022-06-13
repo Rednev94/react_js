@@ -3,28 +3,28 @@ import { IUsers } from '../../../interfaces/IUsers';
 import style from '../UsersPage.module.scss';
 import UserCard from './UserCard';
 
-interface Iprops {
+interface IProps {
   usersDataAttr: IUsers[];
 }
 
-const UsersPageComponent: FC<Iprops> = ({ usersDataAttr }) => {
+const UsersPageComponent: FC<IProps> = ({ usersDataAttr }) => {
   const myVar = true;
   return (
     <div>
       <p>Список пользователей:</p>
-      {/* <div style={{ display: `${myVar ? 'flex' : 'block'}`, flexWrap: 'wrap', gap: '20px' }}> Инлайвывоые стили */}
+      {/* <div style={{ display: `${myVar ? 'flex' : 'block'}`, flexWrap: 'wrap', gap: '20px' }}> */}
       <div className={`${myVar ? style.user_list : ''}`}>
         {usersDataAttr.length ? (
           usersDataAttr.map((user) => {
             const { id, name, email } = user;
             return (
-              <React.Fragment key={`UserID ${id}`}>
+              <React.Fragment key={`UserId:${id}`}>
                 <UserCard name={name} email={email} />
               </React.Fragment>
             );
           })
         ) : (
-          <div>Пользователей не найдено.</div>
+          <div>Пользователи не найдены.</div>
         )}
       </div>
     </div>
