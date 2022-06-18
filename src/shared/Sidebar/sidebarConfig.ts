@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/prefer-default-export
 export const sidebarConfig = [
-  { id: 1, name: 'Страница пользователей' },
-  { id: 2, name: 'Тестовая страница' },
+  { id: 1, name: 'Страница пользователей', path: '/users_page' },
+  { id: 2, name: 'Тестовая страница', path: '/test_page' },
 ];
